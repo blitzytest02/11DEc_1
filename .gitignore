@@ -1,4 +1,36 @@
+# =================================
+# Node.js Express Tutorial - .gitignore
+# =================================
+# This file specifies patterns for files and directories
+# that Git should ignore and not track in version control.
+
+# ---------------------------------
+# Dependencies
+# ---------------------------------
+# Exclude npm dependencies directory
+# These packages are installed via 'npm install' and should
+# not be committed to the repository. They are defined in
+# package.json and package-lock.json instead.
 node_modules/
+
+# ---------------------------------
+# Environment Variables
+# ---------------------------------
+# Exclude environment secrets file
+# This file may contain sensitive information like API keys,
+# database passwords, and other secrets that should never
+# be committed to version control.
 .env
+
+# Exclude local environment overrides
+# Used for developer-specific environment configurations
+# that override the default .env settings.
 .env.local
+
+# ---------------------------------
+# Logs
+# ---------------------------------
+# Exclude all log files
+# Log files can grow large and contain runtime-specific
+# information that shouldn't be tracked in version control.
 *.log
